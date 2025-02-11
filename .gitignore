@@ -1,0 +1,14 @@
+# VirtualEnv
+lib/
+bin/
+pyvenv.cfg
+
+# Compiler junk
+__pycache__/
+
+# Local
+*.sock 
+static/
+*.sqlite3
+*.env
+include/
