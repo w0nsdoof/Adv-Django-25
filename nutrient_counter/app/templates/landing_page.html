@@ -1,0 +1,195 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?healthy-food') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .overlay {
+            background: rgba(87, 87, 87, 0.6);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="hero">
+        <div class="overlay">
+            <h1>Track Your Calories Easily</h1>
+            <p>Stay fit and achieve your health goals with our intuitive calorie tracker.</p>
+            <a href="#features" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+    
+    <section id="features" class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>Simple Tracking</h3>
+                <p>Easily log your meals and track calorie intake.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Visual Insights</h3>
+                <p>Get detailed charts and analytics of your nutrition.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Set Your Goals</h3>
+                <p>Customize your daily calorie target and monitor progress.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="text-center py-5 bg-light">
+        <h2>Start Tracking Today</h2>
+        <p>Join thousands of users in achieving their health goals.</p>
+        <a href="{% url 'register' %}" class="btn btn-success">Get Started</a>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4; /* Fallback color */
+        }
+
+
+        .hero {
+            background: url('health.JPG'); 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(104, 101, 101, 0.5); /* Dark overlay */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #218838;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .feature-box {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>Track Your Calories Easily</h1>
+            <p>Stay fit and achieve your health goals with our intuitive calorie tracker.</p>
+            <a href="{% url 'register' %}" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Simple Tracking</h3>
+                <p>Easily log your meals and track calorie intake.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Visual Insights</h3>
+                <p>Get detailed charts and analytics of your nutrition.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Set Your Goals</h3>
+                <p>Customize your daily calorie target and monitor progress.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
